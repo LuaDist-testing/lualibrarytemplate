@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lualibrarytemplate"
-version = "1.1-1"
+version = "1.2-1"
 
 -- LuaDist source
 source = {
-  tag = "1.1-1",
+  tag = "1.2-1",
   url = "git://github.com/LuaDist-testing/lualibrarytemplate.git"
 }
 -- Original source
 -- source = {
---     url = "https://github.com/Tieske/Lua_library_template/archive/version_1.1.tar.gz",
---     dir = "Lua_library_template-version_1.1"
+--     url = "https://github.com/Tieske/Lua_library_template/archive/version_1.2.tar.gz",
+--     dir = "Lua_library_template-version_1.2"
 -- }
 description = {
    summary = "Lua template for C libraries",
@@ -32,12 +32,12 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lualibrarytemplate.dummy"] = "dummy.lua",
+    ["lualibrarytemplate.datafile"] = "lualibrarytemplate/datafile.lua",
   },
   copy_directories = { "template" },
   install = {
     bin = {
-      luacmodule = "luacmodule.lua",
+      luacmodule = "bin/luacmodule.lua",
     }
-  } 
+  }
 }
