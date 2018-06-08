@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lualibrarytemplate"
-version = "1.0-1"
+version = "1.1-1"
 
 -- LuaDist source
 source = {
-  tag = "1.0-1",
+  tag = "1.1-1",
   url = "git://github.com/LuaDist-testing/lualibrarytemplate.git"
 }
 -- Original source
 -- source = {
---     url = "https://github.com/Tieske/Lua_library_template/archive/version_1.0.tar.gz",
---     dir = "Lua_library_template-version_1.0"
+--     url = "https://github.com/Tieske/Lua_library_template/archive/version_1.1.tar.gz",
+--     dir = "Lua_library_template-version_1.1"
 -- }
 description = {
    summary = "Lua template for C libraries",
@@ -25,7 +25,7 @@ description = {
    license = "MIT/X11"
 }
 dependencies = {
-   "lua >= 5.1, < 5.2",
+   "lua >= 5.1, < 5.4",
    "luafilesystem",
    "datafile",
 }
